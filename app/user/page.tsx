@@ -6,7 +6,7 @@ export default function Home() {
   const [data, setData] = useState([])
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/vender')
+      const response = await axios.get('https://bookmanagement-nine.vercel.app/api/vender')
       console.log('Response data:', response.data)
       setData(response.data)
     } catch (error) {
